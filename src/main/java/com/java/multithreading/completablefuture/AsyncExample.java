@@ -1,4 +1,4 @@
-package com.java.multithreading.compitablefuture;
+package com.java.multithreading.completablefuture;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
