@@ -1,5 +1,6 @@
 package com.java.function;
 
+import java.util.List;
 import java.util.function.BiFunction;
 
 //interface BiFunction<T,U,R>{
@@ -11,5 +12,8 @@ public class BiFunctionExample {
         System.out.println(biFunction.apply(10,20));
         System.out.println(biFunction.apply(13,4));
         System.out.println(biFunction.apply(2,6));
+
+        List<String> temp= List.of(null);
+        System.out.println(temp);
     }
 }

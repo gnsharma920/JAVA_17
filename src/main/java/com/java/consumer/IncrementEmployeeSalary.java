@@ -2,7 +2,6 @@ package com.java.consumer;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.BiConsumer;
 
 class Employee {
     private String name;
@@ -32,22 +31,24 @@ class Employee {
 
 public class IncrementEmployeeSalary {
     public static void main(String[] args) {
-        List<Employee> employees = populate();
-
-        BiConsumer<Employee, Double> biConsumer = (employee, increment) -> {
-            Double currentSalary = employee.getSalary();
-            employee.setSalary(currentSalary + increment);
-        };
-
-        for (Employee e : employees) {
-            biConsumer.accept(e, 5000.0);
-        }
-
-        for (Employee e : employees) {
-            System.out.println("*********************************************");
-            System.out.println("Name: " + e.getName());
-            System.out.println("Salary: " + e.getSalary());
-        }
+        List<String> temp= List.of(null);
+        System.out.println(temp);
+//        List<Employee> employees = populate();
+//
+//        BiConsumer<Employee, Double> biConsumer = (employee, increment) -> {
+//            Double currentSalary = employee.getSalary();
+//            employee.setSalary(currentSalary + increment);
+//        };
+//
+//        for (Employee e : employees) {
+//            biConsumer.accept(e, 5000.0);
+//        }
+//
+//        for (Employee e : employees) {
+//            System.out.println("*********************************************");
+//            System.out.println("Name: " + e.getName());
+//            System.out.println("Salary: " + e.getSalary());
+//        }
     }
 
     public static ArrayList<Employee> populate() {
